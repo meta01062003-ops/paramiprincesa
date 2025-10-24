@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(to bottom, #e9dfd1, #d8c8b8);
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.container-navegacion {
+  background-color: #fff8e7;
+  border-bottom: 2px solid #c9a86a;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  padding: 10px;
+  text-align: center;
+}
+
+.container-navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container-navegacion li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #5a3c1a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container-navegacion a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* Marco polaroid vintage */
+.marco-polaroid-vintage {
+  position: relative;
+  background: #fffdf8;
+  padding: 10px 10px 45px 10px;
+  border: 2px solid #d2b48c;
+  border-radius: 6px;
+  width: 220px;
+  box-shadow:
+    0 5px 15px rgba(0,0,0,0.4),
+    inset 0 0 10px rgba(255,255,255,0.4);
+  transform: rotate(-3deg);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.marco-polaroid-vintage:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.5),
+    inset 0 0 15px rgba(255,255,255,0.5);
+}
+
+.marco-polaroid-vintage img,
+.marco-polaroid-vintage video {
+  width: 100%;
+  border-radius: 3px;
+  border: 3px solid #fffaf0;
+  display: block;
+}
+
+.marco-polaroid-vintage p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4a3b2a;
+  letter-spacing: 1px;
+}
+
+/* Pinza decorativa */
+.pinza {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 20px;
+  background: #6b4e2e;
+  border-radius: 2px 2px 4px 4px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+}
+
+.pinza::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  width: 14px;
+  height: 6px;
+  background: #5a4226;
+  border-radius: 2px;
+}
+
+/* Ajuste especial para videos */
+.video-marco video {
+  border-radius: 5px;
+}
